@@ -14,6 +14,7 @@ public class MovePath
         set
         {
             Debug.Log(value);
+            value.z += 100;
             Vector3 v3 = Camera.main.ScreenToWorldPoint(value);
             v3.z = 0;
             endPosition = v3;
